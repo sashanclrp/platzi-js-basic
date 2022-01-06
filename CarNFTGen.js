@@ -30,6 +30,7 @@ function luxCar (br, co, mo) {
 
 var i = 0
 var carId = 0
+var nftCars = []
 
 while (i < brand.length){
     var x = 0
@@ -38,6 +39,8 @@ while (i < brand.length){
         while (y < model.length){
             window["luxuryCarId_"+carId] = new luxCar(brand[i],color[x],model[y])
             console.log(window["luxuryCarId_"+carId])
+            nftCars.push(window["luxuryCarId_"+carId])
+
             y++
             carId++
         }
